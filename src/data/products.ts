@@ -103,10 +103,11 @@ export const CATEGORIES: Category[] = [
 
 export interface MosaicItem {
   label: string;
+  image?: string;
 }
 
 export const MOSAIC: MosaicItem[] = [
-  { label: "Anéis" },
+  { label: "Anéis", image: "/images/mosaic-aneis.png" },
   { label: "Colares" },
   { label: "Mais Vendidos" },
   { label: "Brincos" },

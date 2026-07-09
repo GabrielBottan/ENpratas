@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { MOSAIC } from "@/data/products";
 import { categoryWhatsApp } from "@/lib/whatsapp";
 import ImagePlaceholder from "./ImagePlaceholder";
@@ -15,9 +16,19 @@ export default function CategoryMosaic() {
             className="group block"
           >
             <div className="relative aspect-[4/5] overflow-hidden bg-sand">
-              <div className="h-full w-full transition-transform duration-500 group-hover:scale-[1.04]">
-                <ImagePlaceholder />
-              </div>
+              {item.image ? (
+                <Image
+                  src={item.image}
+                  alt={item.label}
+                  fill
+                  sizes="(max-width: 768px) 50vw, 25vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+                />
+              ) : (
+                <div className="h-full w-full transition-transform duration-500 group-hover:scale-[1.04]">
+                  <ImagePlaceholder />
+                </div>
+              )}
             </div>
             <div className="mt-3 text-center text-[12px] uppercase tracking-[0.16em] text-ink">
               {item.label}
