@@ -108,7 +108,7 @@ export interface MosaicItem {
 
 export const MOSAIC: MosaicItem[] = [
   { label: "Anéis", image: "/images/mosaic-aneis.png" },
-  { label: "Colares" },
+  { label: "Colares", image: "/images/mosaic-colares.png" },
   { label: "Mais Vendidos" },
   { label: "Brincos" },
 ];
