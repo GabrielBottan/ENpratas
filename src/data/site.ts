@@ -16,7 +16,7 @@ export const INSTALLMENTS = 10;
 export const SITE = {
   brand: "EN Store Prata",
   tagline: "Seu detalhe mais precioso · Prata 925",
-  announcement: "Prata 925 legítima · Atendimento e pedidos pelo WhatsApp",
+  announcement: "Prata 925 legítima · Pedidos pelo WhatsApp",
   email: "contato@enstoreprata.pt",
   hours: "Seg. a Sex., 9h–18h",
   instagram: "https://instagram.com/",

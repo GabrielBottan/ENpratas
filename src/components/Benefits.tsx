@@ -36,9 +36,9 @@ const BENEFITS: Benefit[] = [
 export default function Benefits() {
   return (
     <section className="border-y border-line bg-panel">
-      <div className="mx-auto grid max-w-[1440px] grid-cols-1 gap-y-5 px-6 py-6 sm:grid-cols-2 md:grid-cols-4 md:gap-y-0 md:divide-x md:divide-line/70">
+      <div className="mx-auto flex max-w-[1440px] flex-col items-center gap-5 px-6 py-6 sm:grid sm:grid-cols-2 sm:gap-y-6 md:grid-cols-4 md:gap-y-0 md:divide-x md:divide-line/70">
         {BENEFITS.map((b) => (
-          <div key={b.title} className="flex items-center justify-center gap-3 px-4">
+          <div key={b.title} className="flex w-[230px] items-center gap-3 px-4 sm:w-auto sm:justify-center">
             <svg
               viewBox="0 0 24 24"
               fill="none"
