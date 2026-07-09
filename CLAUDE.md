@@ -80,9 +80,9 @@ categorias, mosaico e "joias especiais" usam um **placeholder neutro elegante**
 
 ## Deploy na Vercel
 
-1. Este repositório já é a raiz do projeto Next.
+1. Suba a pasta `app/` para um repositório Git (nome sem `#`).
 2. Na Vercel: **New Project** → importe o repo.
-3. **Root Directory:** raiz do repositório (o próprio projeto Next).
+3. **Root Directory:** aponte para `app` (se o repo tiver a pasta `app` na raiz).
 4. Framework detectado automaticamente como **Next.js**. Build: `next build`
    (gera export estático em `out/`). Nenhuma variável de ambiente é necessária.
 
