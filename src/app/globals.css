@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@theme {
+  /* Warm-neutral palette tuned to the editorial reference + the pink EN logo */
+  --color-cream: #fbf7f1;
+  --color-panel: #f4ece3;
+  --color-sand: #e4d7c7;
+  --color-ink: #3a2b2e;
+  --color-muted: #8c7b70;
+  --color-wine: #8a2149;
+  --color-wine-light: #b04a6e;
+  --color-dark: #2c1922;
+  --color-gold: #c9a24b;
+  --color-line: #ebe0d3;
+  --color-line-strong: #dccbba;
+
+  --font-sans: var(--font-jost), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-cormorant), Georgia, "Times New Roman", serif;
+  --font-script: var(--font-sacramento), cursive;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: #e7cbd6;
+}
+
+/* Hide scrollbars on horizontal scrollers */
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Scroll-reveal + float animations */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float-y {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.reveal {
+  opacity: 0;
+}
+.reveal.is-visible {
+  animation: fade-up 0.8s ease both;
+}
+
+.float-y {
+  animation: float-y 3.2s ease-in-out infinite;
+}
