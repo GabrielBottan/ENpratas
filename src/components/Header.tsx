@@ -22,7 +22,7 @@ export default function Header() {
 
   return (
     <header
-      className={`sticky top-0 z-40 transition-colors duration-300 ${
+      className={`${solid ? "fixed" : "absolute"} inset-x-0 top-0 z-40 transition-colors duration-300 ${
         solid
           ? "border-b border-line bg-cream/90 text-[#4a3840] backdrop-blur-md"
           : "border-b border-transparent bg-transparent text-white [text-shadow:0_1px_6px_rgba(0,0,0,0.35)]"

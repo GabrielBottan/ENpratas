@@ -20,7 +20,7 @@ export default function Hero() {
   const go = (dir: number) => setActive((i) => (i + dir + count) % count);
 
   return (
-    <section className="relative -mt-[68px] w-full bg-sand md:-mt-[82px]">
+    <section className="relative w-full bg-sand">
       {/* Mobile artwork */}
       <div className="relative aspect-[940/1494] w-full overflow-hidden md:hidden">
         {MOBILE.map((src, index) => (

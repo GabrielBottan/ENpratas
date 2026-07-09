@@ -22,8 +22,10 @@ export default function Home() {
   return (
     <main id="top">
       <AnnouncementBar />
-      <Header />
-      <Hero />
+      <div className="relative">
+        <Header />
+        <Hero />
+      </div>
       <Benefits />
 
       <Reveal>
