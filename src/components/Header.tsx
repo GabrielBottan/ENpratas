@@ -50,7 +50,7 @@ export default function Header() {
               width={160}
               height={56}
               priority
-              className={`h-11 w-auto object-contain transition md:h-14 ${
+              className={`h-16 w-auto object-contain transition md:h-20 ${
                 solid ? "" : "drop-shadow-[0_2px_10px_rgba(0,0,0,0.35)]"
               }`}
             />
