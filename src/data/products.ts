@@ -98,7 +98,7 @@ export const CATEGORIES: Category[] = [
   { name: "Brincos", image: "/images/brinco.jpg" },
   { name: "Pulseiras", image: "/images/pulseira.jpg" },
   { name: "Conjuntos", image: "/images/conjunto.jpg" },
-  { name: "Tornozeleiras" },
+  { name: "Tornozeleiras", image: "/images/tornozeleira.jpg" },
 ];
 
 export interface MosaicItem {
