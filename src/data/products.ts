@@ -97,7 +97,7 @@ export const CATEGORIES: Category[] = [
   { name: "Anéis", image: "/images/anel.jpg" },
   { name: "Brincos", image: "/images/brinco.jpg" },
   { name: "Pulseiras", image: "/images/pulseira.jpg" },
-  { name: "Conjuntos" },
+  { name: "Conjuntos", image: "/images/conjunto.jpg" },
   { name: "Tornozeleiras" },
 ];
 
